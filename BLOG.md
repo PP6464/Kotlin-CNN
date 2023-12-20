@@ -10,4 +10,4 @@ The implementation was conceptually straightforward, so could be completed in a 
 
 ### Goals
 - Implement the Sequential class:
-  - Implement the constructor for the Sequential class
+  - Implement the constructor for the Sequential class ✅
