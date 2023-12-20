@@ -4,17 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19853291-14a6-4876-a224-707aa070e4be" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/helper/Helper.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/layers/DenseLayer.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/layers/InputLayer.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/layers/OutputLayer.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="19853291-14a6-4876-a224-707aa070e4be" name="Changes" comment="Layer class and subclasses">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/model/Sequential.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BLOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/BLOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/helper/Helper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/helper/Helper.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/layers/DenseLayer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/layers/DenseLayer.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/layers/InputLayer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/layers/InputLayer.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/layers/Layer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/layers/Layer.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/layers/OutputLayer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/layers/OutputLayer.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,11 +71,12 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "P:/MyCode/Kotlin/Kotlin-CNN",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
+    "show.migrate.to.gradle.popup": "false"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -100,6 +100,54 @@
       <option name="presentableId" value="Default" />
       <updated>1702840849211</updated>
     </task>
+    <task id="LOCAL-00001" summary="Day 1">
+      <option name="closed" value="true" />
+      <created>1702902667082</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1702902667082</updated>
+    </task>
+    <task id="LOCAL-00002" summary="IntelliJ config">
+      <option name="closed" value="true" />
+      <created>1702902681487</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1702902681487</updated>
+    </task>
+    <task id="LOCAL-00003" summary="IntelliJ config">
+      <option name="closed" value="true" />
+      <created>1702902688619</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1702902688619</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Helper functions">
+      <option name="closed" value="true" />
+      <created>1702902699405</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1702902699405</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Layer class and subclasses">
+      <option name="closed" value="true" />
+      <created>1702902728660</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1702902728660</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Day 1" />
+    <MESSAGE value="IntelliJ config" />
+    <MESSAGE value="Helper functions" />
+    <MESSAGE value="Layer class and subclasses" />
+    <option name="LAST_COMMIT_MESSAGE" value="Layer class and subclasses" />
   </component>
 </project>
