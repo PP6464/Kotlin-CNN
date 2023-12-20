@@ -1,5 +1,6 @@
 package layers
 
+import helper.*
 import org.jetbrains.kotlinx.multik.ndarray.data.Dim2
 import org.jetbrains.kotlinx.multik.ndarray.data.NDArray
 import org.jetbrains.kotlinx.multik.ndarray.operations.toList
@@ -12,7 +13,7 @@ import org.jetbrains.kotlinx.multik.ndarray.operations.toList
  */
 data class OutputLayer(
 	override val size: Long,
-	override var activations : List<Double>?,
+	override var activations : List<Double> = emptyActivations(size),
 	val outputs: List<String>,
 ) : Layer {
 	override fun setActivations(activations : NDArray<Double, Dim2>) {

@@ -11,7 +11,7 @@ import org.jetbrains.kotlinx.multik.ndarray.operations.toList
  */
 data class DenseLayer(
 	override val size: Long,
-	override var activations : List<Double>? = null,
+	override var activations : List<Double>,
 ) : Layer {
 	override fun setActivations(activations : NDArray<Double, Dim2>) {
 		this.activations = activations.flatten().toList()

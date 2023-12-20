@@ -12,6 +12,6 @@ import org.jetbrains.kotlinx.multik.ndarray.data.NDArray
  */
 interface Layer {
 	val size : Long
-	var activations : List<Double>?
+	var activations : List<Double>
 	fun setActivations(activations : NDArray<Double, Dim2>)
 }

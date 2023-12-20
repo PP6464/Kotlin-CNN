@@ -1,6 +1,6 @@
 package layers
 
-import helper.multiplyAll
+import helper.*
 import org.jetbrains.kotlinx.multik.ndarray.data.Dim2
 import org.jetbrains.kotlinx.multik.ndarray.data.NDArray
 import org.jetbrains.kotlinx.multik.ndarray.operations.toList
@@ -12,7 +12,7 @@ import org.jetbrains.kotlinx.multik.ndarray.operations.toList
  */
 data class InputLayer(
 	val shape : List<Int>,
-	override var activations : List<Double>? = null,
+	override var activations : List<Double> = emptyActivations(shape.map(Int::toDouble).multiplyAll().toLong()),
 ) : Layer {
 	override val size : Long
 		get() = shape.map(Int::toDouble).multiplyAll().toLong()
