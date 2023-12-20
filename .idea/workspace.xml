@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19853291-14a6-4876-a224-707aa070e4be" name="Changes" comment="Layer class and subclasses">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/model/Sequential.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BLOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/BLOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/helper/Helper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/helper/Helper.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/layers/DenseLayer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/layers/DenseLayer.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/layers/InputLayer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/layers/InputLayer.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/layers/Layer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/layers/Layer.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/layers/OutputLayer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/layers/OutputLayer.kt" afterDir="false" />
-    </list>
+    <list default="true" id="19853291-14a6-4876-a224-707aa070e4be" name="Changes" comment="Remove redundant import" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -140,14 +130,67 @@
       <option name="project" value="LOCAL" />
       <updated>1702902728660</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="IntelliJ config">
+      <option name="closed" value="true" />
+      <created>1703086596406</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1703086596406</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Day 2">
+      <option name="closed" value="true" />
+      <created>1703086607928</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1703086607928</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Make activations non-nullable">
+      <option name="closed" value="true" />
+      <created>1703086630672</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1703086630672</updated>
+    </task>
+    <task id="LOCAL-00009" summary="generate a list of empty activations for defaulting to">
+      <option name="closed" value="true" />
+      <created>1703086651066</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1703086651066</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Sequential model constructor implementation">
+      <option name="closed" value="true" />
+      <created>1703086671078</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1703086671078</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Remove redundant import">
+      <option name="closed" value="true" />
+      <created>1703086689742</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1703086689742</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Day 1" />
-    <MESSAGE value="IntelliJ config" />
     <MESSAGE value="Helper functions" />
     <MESSAGE value="Layer class and subclasses" />
-    <option name="LAST_COMMIT_MESSAGE" value="Layer class and subclasses" />
+    <MESSAGE value="IntelliJ config" />
+    <MESSAGE value="Day 2" />
+    <MESSAGE value="Make activations non-nullable" />
+    <MESSAGE value="generate a list of empty activations for defaulting to" />
+    <MESSAGE value="Sequential model constructor implementation" />
+    <MESSAGE value="Remove redundant import" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove redundant import" />
   </component>
 </project>
