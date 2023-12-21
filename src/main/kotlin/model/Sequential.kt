@@ -10,16 +10,16 @@ import kotlin.random.Random
 /**
  * A class to model a Sequential neural network (a sequence of layers, hence the name)
  * It is serializable so that it can be saved to and loaded from a file
- * @param: layers: The layers of the model
+ * @param: layers The layers of the model
  */
 
 data class Sequential(val layers : List<Layer>) : Serializable {
 	// weights contains a list for each layer pair, and each layer pair contains a list for each node of the second layer in the pair.
 	// Each double in the list for each node is the weight of the connection from the corresponding first node to the corresponding second node.
-	val weights = mutableListOf<List<List<Double>>>()
+	private val weights = mutableListOf<List<List<Double>>>()
 	
 	// biases contains a list for each layer, where each element in the list is bias for that node
-	val biases = mutableListOf<List<Double>>()
+	private val biases = mutableListOf<List<Double>>()
 	
 	init {
 		assert(layers.first() is InputLayer)
@@ -30,7 +30,7 @@ data class Sequential(val layers : List<Layer>) : Serializable {
 					(0..<layerPair.second.size).map {
 						(0..<layerPair.first.size).map {
 							Random.nextDouble(
-								- sqrt(6.0 / (layerPair.first.size + layerPair.second.size)),
+								-sqrt(6.0 / (layerPair.first.size + layerPair.second.size)),
 								sqrt(6.0 / (layerPair.first.size + layerPair.second.size))
 							)
 						}
@@ -38,16 +38,16 @@ data class Sequential(val layers : List<Layer>) : Serializable {
 					}
 				)
 		} // Xavier Glorot weights initialization
-		for ((index, layer) in layers.withIndex()) {
-			biases[index] = emptyActivations(layer.size) // Can use the same initialization to set biases to full of 0s
+		for (layer in layers) {
+			biases += emptyActivations(layer.size) // Can use the same initialization to set biases to full of 0s
 		}
 	}
 	
 	/**
 	 * A function to save the model to a file
-	 * @param path: The path of the file to save the model to
+	 * @param path The path of the file to save the model to
 	 */
-	fun saveModel(path: String) {
+	fun save(path : String) {
 		ObjectOutputStream(FileOutputStream(path)).use {
 			it.writeObject(this)
 		}
@@ -55,12 +55,12 @@ data class Sequential(val layers : List<Layer>) : Serializable {
 	
 	/**
 	 * A function that takes an input and outputs a prediction from the neural network
-	 * @param input: The input activation
-	 * @param returnIndex: Whether to return the index of the output node or the label of the output node (index used for training)
+	 * @param input The input activation
+	 * @param returnIndex Whether to return the index of the output node or the label of the output node (index used for training)
 	 */
-	fun run(input: NDArray<Double, Dim2>, returnIndex : Boolean = false) : Any {
+	fun run(input : D2Array<Double>, returnIndex : Boolean = false) : Any {
 		layers[0].set2DActivations(input)
-		for (layerIndex in 1..layers.size) {
+		for (layerIndex in 1..<layers.size) {
 			val activations = mutableListOf<Double>()
 			repeat(layers[layerIndex].size.toInt()) { nodeIndex ->
 				var total = 0.0
@@ -81,8 +81,8 @@ data class Sequential(val layers : List<Layer>) : Serializable {
 	companion object {
 		/**
 		 * A function to load the model from a file
-		 * @param path: The path of the file to load the model from
+		 * @param path The path of the file to load the model from
 		 */
-		fun loadObject(path: String) = ObjectInputStream(FileInputStream(path)).use { it.readObject() as Sequential }
+		fun load(path : String) = ObjectInputStream(FileInputStream(path)).use { it.readObject() as Sequential }
 	}
 }
