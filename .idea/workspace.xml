@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="19853291-14a6-4876-a224-707aa070e4be" name="Changes" comment="Remove redundant import">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/helper/NNMath.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BLOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/BLOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/layers/DenseLayer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/layers/DenseLayer.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/layers/InputLayer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/layers/InputLayer.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/layers/Layer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/layers/Layer.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/layers/OutputLayer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/layers/OutputLayer.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/model/Sequential.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/model/Sequential.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,9 +40,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin Interface" />
-        <option value="Kotlin File" />
         <option value="Class" />
         <option value="Kotlin Data Class" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
