@@ -13,7 +13,7 @@ data class DenseLayer(
 	override val size: Long,
 	override var activations : List<Double>,
 ) : Layer {
-	override fun setActivations(activations : NDArray<Double, Dim2>) {
+	override fun set2DActivations(activations : NDArray<Double, Dim2>) {
 		this.activations = activations.flatten().toList()
 	}
 }

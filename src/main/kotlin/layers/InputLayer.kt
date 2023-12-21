@@ -8,7 +8,7 @@ import org.jetbrains.kotlinx.multik.ndarray.operations.toList
 /**
  * A class to model an input layer
  * @param shape: The shape of the input
- * @param activations: The activations of the input (can be null by default)
+ * @param activations: The activations of the input (can be null by default) (must be 2D if supplied)
  */
 data class InputLayer(
 	val shape : List<Int>,
@@ -19,8 +19,9 @@ data class InputLayer(
 	
 	/**
 	 * A method to set the input activations as they may not be known at construction time
+	 * @param activations: The activations of the input (only 2D input for now)
 	 */
-	override fun setActivations(activations : NDArray<Double, Dim2>) {
+	override fun set2DActivations(activations : NDArray<Double, Dim2>) {
 		this.activations = activations.flatten().toList()
 	}
 }
